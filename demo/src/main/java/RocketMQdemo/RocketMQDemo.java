@@ -60,7 +60,6 @@ public class RocketMQDemo {
     public static void producer(String groupName, String topicName, String tagName) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
         DefaultMQProducer producer = new DefaultMQProducer(groupName);
         BrokerConfig brokerConfig = new BrokerConfig();
-
         producer.setNamesrvAddr(MQ_NAMESRVADDR);
         producer.start();
         String body = "Hello, 老王";
