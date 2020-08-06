@@ -37,6 +37,7 @@ public class UserController {
 
     @RequestMapping("/index")
     public ModelAndView getInfo() {
+        System.out.println("index");
         return new ModelAndView("index");
     }
 
